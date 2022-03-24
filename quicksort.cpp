@@ -17,7 +17,7 @@ class QuickSort{
 		}
 
 		
-		int partition (int arr[], int low, int high)
+		int partition (T arr[], int low, int high)
 		{
 			int pivot = arr[high]; // pivot
 			int i = (low - 1); // Index of smaller element and indicates the right position of pivot found so far
@@ -36,7 +36,7 @@ class QuickSort{
 		}
 
 		
-		void quickSort(int arr[], int low, int high,int n)
+		void quickSort(T arr[], int low, int high,int n)
 		{
 			if (low < high)
 			{

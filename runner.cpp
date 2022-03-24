@@ -13,13 +13,13 @@ class runner{
 			int c;
 			cout<<"Enter\n 1. Bubble Sort\n 2. Selection sort\n 3. Merge Sort\n 4. Quick Sort\n";
 			cin>>c;
-			IO <int> o;
+			IO <T> o;
 			switch(c){
 				case 1:
 				{
 				o.inputArray();
 				o.setInterval();
-				bubbleSort<int> b(o.interval);
+				bubbleSort<T> b(o.interval);
 				b.Sort(o.arr,o.n);
 				break;
 				}
@@ -27,7 +27,7 @@ class runner{
 				{
 				o.inputArray();
 				o.setInterval();
-				SelectionSort<int> b(o.interval);
+				SelectionSort<T> b(o.interval);
 				b.Sort(o.arr,o.n);
 				break;
 				}
@@ -35,7 +35,7 @@ class runner{
 				{
 				o.inputArray();
 				o.setInterval();
-				MergeSort<int> b(o.interval);
+				MergeSort<T> b(o.interval);
 				b.mergeSort(o.arr,0,o.n-1,o.n);
 				break;
 				}
@@ -43,7 +43,7 @@ class runner{
 				{
 				o.inputArray();
 				o.setInterval();
-				QuickSort<int> b(o.interval);
+				QuickSort<T> b(o.interval);
 				b.quickSort(o.arr,0,o.n-1,o.n);
 				break;
 				}

@@ -59,7 +59,7 @@ class MergeSort{
 		// begin is for left index and end is
 		// right index of the sub-array
 		// of arr to be sorted */
-		void mergeSort(int array[], int const begin, int const end,int n)
+		void mergeSort(T array[], int const begin, int const end,int n)
 		{
 			if (begin >= end)
 				return; // Returns recursively
