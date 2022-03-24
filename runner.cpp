@@ -57,8 +57,19 @@ int main()
 	cin>>typeChoice;
 	switch(typeChoice){
 		case 1:
-			int t;
+			// int t;
 			runner<int> r;
 			r.run();
+			break;
+		case 2:
+			// int t;
+			runner<float> r;
+			r.run();
+			break;
+		case 3:
+			// int t;
+			runner<char> r;
+			r.run();
+			break;
 	}
 }
