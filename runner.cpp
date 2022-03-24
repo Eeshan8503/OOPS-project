@@ -58,18 +58,18 @@ int main()
 	switch(typeChoice){
 		case 1:
 			// int t;
-			runner<int> r;
-			r.run();
+			runner<int> ri;
+			ri.run();
 			break;
 		case 2:
 			// int t;
-			runner<float> r;
-			r.run();
+			runner<float> rf;
+			rf.run();
 			break;
 		case 3:
 			// int t;
-			runner<char> r;
-			r.run();
+			runner<char> rc;
+			rc.run();
 			break;
 	}
 }
