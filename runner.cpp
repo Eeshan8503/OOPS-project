@@ -2,14 +2,63 @@
 #include "SelectionSort.cpp"
 #include "mergeSort.cpp"
 #include "quicksort.cpp"
+#include "IO.cpp"
+#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
+template<class T>
+class runner{
+	public:
+		void run(){
+			int c;
+			cout<<"Enter\n 1. Bubble Sort\n 2. Selection sort\n 3. Merge Sort\n 4. Quick Sort\n";
+			cin>>c;
+			IO <int> o;
+			switch(c){
+				case 1:
+				{
+				o.inputArray();
+				o.setInterval();
+				bubbleSort<int> b(o.interval);
+				b.Sort(o.arr,o.n);
+				break;
+				}
+				case 2:
+				{
+				o.inputArray();
+				o.setInterval();
+				SelectionSort<int> b(o.interval);
+				b.Sort(o.arr,o.n);
+				break;
+				}
+				case 3:
+				{
+				o.inputArray();
+				o.setInterval();
+				MergeSort<int> b(o.interval);
+				b.mergeSort(o.arr,0,o.n-1,o.n);
+				break;
+				}
+				case 4:
+				{
+				o.inputArray();
+				o.setInterval();
+				QuickSort<int> b(o.interval);
+				b.quickSort(o.arr,0,o.n-1,o.n);
+				break;
+				}
+			}
+		}
+};
 int main()
 {
-    cout<<"Enter \n 1. Bubble Sort\n 2. Selection Sort\n 3. Merge Sort\n 4. Quick Sort\n";
-	int arr[] = {64, 34, 25, 12, 22, 11, 90};
-	int n = sizeof(arr)/sizeof(arr[0]);
-	bubbleSort(arr, n);
-	cout<<"Sorted array: \n";
-	printArray(arr, n);
-	return 0;
+	int typeChoice;
+    cout<<"What is the type of your array: \n1. Integer\n2. Float\n3. Character\n";	
+	cin>>typeChoice;
+	switch(typeChoice){
+		case 1:
+			int t;
+			runner<int> r;
+			r.run();
+	}
 }
